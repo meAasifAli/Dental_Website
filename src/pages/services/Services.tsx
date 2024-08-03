@@ -28,7 +28,10 @@ const Services = () => {
                 <div className="py-16 max-w-[1280px] mx-auto space-y-16">
                     <div className="flex flex-col items-center justify-center">
                         <div className="space-y-2 flex flex-col items-center justify-center">
-                            <h1 className="font-semibold text-[58px] tracking-tighter max-w-[687px]">Services</h1>
+                            <div className="flex flex-col gap-0">
+                                <h1 className="font-semibold text-[58px] tracking-tighter max-w-[687px]">Services</h1>
+                                <img src="/assets/underline.png" alt="" />
+                            </div>
                             <p className="text-[#3C4959] tracking-wide text-center text-[18px] font-normal max-w-[531px]">We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
                         </div>
                     </div>

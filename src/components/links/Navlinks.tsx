@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 type FooterLinkProps = {
     isFooter: boolean
 }
 
 const Navlinks = ({ isFooter }: FooterLinkProps) => {
+    const { pathname } = useLocation()
     const links = [
         { name: 'Home', path: '/' },
         { name: 'Services', path: '/services' },
@@ -16,7 +17,7 @@ const Navlinks = ({ isFooter }: FooterLinkProps) => {
         <>
             {
                 links.map((link, id) => {
-                    return <Link className={`text-[#011632] ${isFooter ? "font-normal" : "font-medium"} text-[16px] tracking-wider`} to={link.path} key={id}>{link.name}</Link>
+                    return <Link className={`text-[#011632]  ${isFooter ? "font-normal" : "font-medium"} text-[16px] tracking-wider`} to={link.path} key={id}>{link.name}</Link>
                 })
             }
         </>

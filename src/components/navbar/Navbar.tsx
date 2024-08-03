@@ -4,8 +4,8 @@ import Navlinks from "../links/Navlinks";
 const Navbar = () => {
     const { pathname } = useLocation()
     return (
-        <div className={`w-full pt-4 sm:pt-8 ${pathname === "/services" ? "bg-[#E6F6FE]" : "bg-[#fff]"}`}>
-            <div className={`${pathname === '/services' ? "bg-white" : "bg-[#E6F6FE]"} w-full max-w-[1280px] h-[90px] mx-auto rounded-lg`}>
+        <div className={`w-full pt-4 sm:pt-8 ${pathname === "/services" || pathname === "/blogs" || pathname === "/about" || pathname === "/contact" ? "bg-[#E6F6FE]" : "bg-[#fff]"}`}>
+            <div className={`${pathname === '/services' || pathname === "/blogs" || pathname === "/about" || pathname === "/contact" ? "bg-white" : "bg-[#E6F6FE]"} w-full max-w-[1280px] h-[90px] mx-auto rounded-lg`}>
                 <nav className={`flex items-center w-full justify-between sm:px-8 px-4`}>
                     <div>
                         <img src="/assets/logo.png" className="w-24 h-24 object-contain" alt="" />
