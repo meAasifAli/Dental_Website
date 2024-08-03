@@ -3,7 +3,7 @@ import { AboutCardType } from "../../types/AboutCardType"
 const AboutCard = ({ src, name, speciality, desc }: AboutCardType) => {
     return (
         <div className="flex flex-col sm:flex-row items-center  gap-8 sm:bg-transparent bg-[#E6F6FE] p-4 rounded-lg">
-            <img src={src} alt="" className="w-full" />
+            <img src={src} alt="" className="w-full sm:w-auto" />
             <div className="space-y-8">
                 <div className="flex flex-col sm:flow-root sm:items-center gap-2">
                     <h4 className="font-semibold text-2xl text-[#011632]">{name}</h4>
