@@ -10,17 +10,17 @@ const Contact = () => {
     return (
         <>
             <div className="w-full bg-[#E6F6FE] py-2">
-                <div className="py-16 max-w-[1280px] mx-auto space-y-16">
+                <div className="py-16 px-4 sm:px-0 max-w-[1280px] mx-auto space-y-16">
                     <div className="flex flex-col items-center justify-center">
                         <div className="space-y-2 flex flex-col items-center justify-center">
                             <div className="flex flex-col gap-0">
-                                <h1 className="font-semibold text-[58px] tracking-tighter max-w-[687px]">Get in Touch</h1>
+                                <h1 className="font-semibold sm:text-[58px] text-[42px] tracking-tighter max-w-[687px]">Get in Touch</h1>
                                 <img src="/assets/underline.png" alt="" />
                             </div>
                             <p className="text-[#3C4959] tracking-wide text-center text-[18px] font-normal max-w-[531px]">Book an Appointment to treat your teeth right now.</p>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 max-w-[1280px] mx-auto">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-0 max-w-[1280px] mx-auto">
                         <div className="flex flex-col  max-w-[503px] mx-auto">
                             <img src="/assets/map.png" alt="" />
                             <div className="space-y-6">
@@ -82,9 +82,9 @@ const Contact = () => {
             </div>
 
 
-            <div className="flex flex-col items-center justify-center gap-8 max-w-[1280px] mx-auto py-16">
+            <div className="flex flex-col items-center justify-center gap-8 max-w-[1280px] mx-auto py-16 px-4 sm:px-0">
                 <div>
-                    <h2 className="text-[42px] tracking-wider text-center max-w-[629px] font-semibold text-[#011632]">FAQS</h2>
+                    <h2 className="sm:text-[42px] text-[36px] tracking-wider text-center max-w-[629px] font-semibold text-[#011632]">FAQS</h2>
                     <p className="text-[#3C4959] max-w-[463px] text-[18px] text-center">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
                 </div>
                 <div>

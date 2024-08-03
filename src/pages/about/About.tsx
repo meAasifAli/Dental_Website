@@ -4,20 +4,20 @@ import ServiceCard from "../../components/cards/ServiceCard"
 const About = () => {
     return (
         <>
-            <div className="w-full bg-[#E6F6FE] py-2">
-                <div className="py-16 max-w-[1280px] mx-auto space-y-16">
+            <div className="w-full bg-[#E6F6FE] py-2 px-4 sm:px-0">
+                <div className="py-16 max-w-[1280px] mx-auto sm:space-y-16 px-4 sm:px-0">
                     <div className="flex flex-col items-center justify-center">
                         <div className="space-y-2 flex flex-col items-center justify-center">
-                            <div className="flex flex-col gap-0">
-                                <h1 className="font-semibold text-[58px] tracking-tighter max-w-[687px]">About Us</h1>
+                            <div className="hidden sm:flex flex-col gap-0">
+                                <h1 className="font-semibold text-[42px] sm:text-[58px] tracking-tighter max-w-[687px]">About Us</h1>
                                 <img src="/assets/underline.png" alt="" />
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center gap-4 max-w-[1280px] mx-auto">
+                    <div className="flex flex-col sm:flex-row items-center gap-4 max-w-[1280px] mx-auto">
                         <div className="flex flex-col justify-between w-full gap-4">
                             <div>
-                                <h1 className="font-semibold text-[42px] tracking-tighter max-w-[687px]">Our Mission</h1>
+                                <h1 className="font-semibold sm:text-[42px] text-[36px] tracking-tighter max-w-[687px]">Our Mission</h1>
                                 <p className="text-[#3C4959]  text-[16px] font-normal max-w-[749px] tracking-tight">At Northern Heights Dental, people come first. We help each of our patients to achieve optimal wellness and health by using a whole body approach to oral health. This means not just focusing on cavities, but focusing on; cranio-facial development, bite and joint balance, oral flora, proper muscle balance/function, and bio-compatibility of dental materials. Great care and planning ensure that everything we do helps promote overall health and well being.</p>
                             </div>
                             <h4 className="font-semibold text-[24px] tracking-tighter max-w-[687px]">More than anything else we love creating happy, healthy smiles.</h4>
@@ -28,21 +28,20 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div className="flex flex-col justify-center items-center gap-4 space-y-8 py-16 max-w-[1280px] mx-auto">
+            <div className="flex flex-col justify-center items-center gap-4 space-y-8 py-16 max-w-[1280px] mx-auto px-4 sm:px-0">
                 <div className="space-y-4">
-                    <div className="flex items-center gap-2">
-                        <h1 className="font-semibold text-[58px] tracking-tighter max-w-[687px]">Meet Our</h1>
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+                        <h1 className="font-semibold text-[42px] sm:text-[58px] tracking-tighter max-w-[687px]">Meet Our</h1>
                         <div>
-                            <h1 className="font-semibold text-[58px] tracking-tighter max-w-[687px]">Specialists</h1>
+                            <h1 className="font-semibold text-[42px] sm:text-[58px] tracking-tighter max-w-[687px]">Specialists</h1>
                             <img src="/assets/underline.png" alt="" />
                         </div>
 
                     </div>
                     <p className="text-[#3C4959] tracking-wide text-center text-[18px] font-normal max-w-[531px]">We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
                 </div>
-                <div className="flex flex-col gap-16 w-full">
+                <div className="flex flex-col gap-16 w-full ">
                     <AboutCard
                         name="DR. Brent"
                         src="/assets/brent.png"
@@ -63,19 +62,19 @@ const About = () => {
                     />
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center gap-4 space-y-8 py-16 max-w-[1280px] mx-auto">
+            <div className="flex flex-col justify-center items-center gap-4 space-y-8 py-16 max-w-[1280px] mx-auto px-4 sm:px-0">
                 <div className="space-y-4">
                     <div className="flex items-center gap-2">
-                        <h1 className="font-semibold text-[58px] tracking-tighter max-w-[687px]">Latest</h1>
+                        <h1 className="font-semibold sm:text-[58px] text-[42px] tracking-tighter max-w-[687px]">Latest</h1>
                         <div>
-                            <h1 className="font-semibold text-[58px] tracking-tighter max-w-[687px]">Technology</h1>
+                            <h1 className="font-semibold sm:text-[58px] text-[42px] tracking-tighter max-w-[687px]">Technology</h1>
                             <img src="/assets/underline.png" alt="" />
                         </div>
 
                     </div>
                     <p className="text-[#3C4959] tracking-wide text-center text-[18px] font-normal max-w-[531px]">Thanks to major technological advancements, dentistry allows treating the most complex cases with less time and more efficiency.</p>
                 </div>
-                <div className="flex items-center gap-16 w-full">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-16 w-full">
                     <img src="/assets/technology.png" alt="" />
                     <div className="flex flex-col justify-start items-start gap-4">
                         <h4 className="font-semibold text-2xl text-[#011632]">The Future of Dentistry is Digital:</h4>
@@ -84,7 +83,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#011632] w-full rounded-lg mx-auto py-16 grid grid-cols-1 sm:grid-cols-3 place-items-center max-w-[1280px]">
+            <div className="bg-[#011632] w-full rounded-lg mx-auto py-16 grid grid-cols-1 sm:grid-cols-3 gap-4 place-items-center max-w-[1280px] px-4 sm:px-0">
                 <ServiceCard
                     src="/assets/teeth.png"
                     title="Root Canal Treatment"
@@ -102,7 +101,7 @@ const About = () => {
                 />
             </div>
             <div className="flex flex-col items-center justify-center gap-4 max-w-[1280px] mx-auto py-16">
-                <h2 className="text-[42px] tracking-wider text-center max-w-[752px] font-semibold text-[#011632]">We’re welcoming new patients and can’t wait to meet you.</h2>
+                <h2 className="sm:text-[42px] text-[36px] tracking-wider text-center max-w-[752px] font-semibold text-[#011632]">We’re welcoming new patients and can’t wait to meet you.</h2>
                 <p className="text-[#3C4959] max-w-[463px] text-[18px] text-center">We use only the best quality materials on the market in order to provide the best products to our patients.</p>
                 <img src="/assets/video.png" alt="" />
                 <button className="bg-[#1376F8] px-6 py-3 rounded-lg text-white">Watch Playlist</button>
