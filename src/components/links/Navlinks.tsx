@@ -17,7 +17,7 @@ const Navlinks = ({ isFooter }: FooterLinkProps) => {
         <>
             {
                 links.map((link, id) => {
-                    return <Link className={`text-[#011632]  ${isFooter ? "font-normal" : "font-medium"} text-[16px] tracking-wider`} to={link.path} key={id}>{link.name}</Link>
+                    return <Link className={`text-[#011632] ${pathname === link.path ? "font-bold" : "font-normal"} ${isFooter ? "font-normal" : "font-medium"} text-[16px] tracking-wider`} to={link.path} key={id}>{link.name}</Link>
                 })
             }
         </>
